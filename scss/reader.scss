@@ -1,0 +1,45 @@
+
+#read {
+  border: 2px solid #999;
+  padding: 4px 8px;
+  margin-bottom: 30px;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  #read-play {
+    display: none;
+  }
+  #read-stop {
+    display: none;
+  }
+
+  &:hover {
+    border: 2px solid #333;
+    transition: all 0.8s;
+    #read-ready {
+        display: none;
+    }       
+    #read-play {
+        display: inline;
+    }    
+    #read-stop {
+        display: none;
+    }
+  }
+
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+#read.playing {
+    border: 2px solid #333;
+    #read-play {
+        display: inline;
+      }
+      #read-stop {
+        display: none;
+      }    
+}

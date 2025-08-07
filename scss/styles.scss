@@ -1,0 +1,33 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255, 230, 230,0.3), rgb(255, 209, 209,0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.grid-container {
+    width: 60%;
+    max-width: 1200px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 80px 60px;
+}
+
+
+h1 {
+    text-align: left;
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
