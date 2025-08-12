@@ -1,10 +1,14 @@
 
 #read {
-  border: 2px solid #999;
+  border: 2px solid #888;
+  color: #333;
   padding: 4px 8px;
+  padding: 6px 12px;
+  transition: all 0.8s;
   margin-bottom: 30px;
   display: inline-block;
   font-size: 12px;
+  font-family: monospace;
   cursor: pointer;
   border-radius: 5px;
   #read-play {
@@ -13,24 +17,44 @@
   #read-stop {
     display: none;
   }
+  svg {
+    vertical-align: middle;
+    path {
+      fill: #888;
+      stroke: #888;
 
+    }
+  }
   &:hover {
     border: 2px solid #333;
+    color: #111;
     transition: all 0.8s;
     #read-ready {
-        display: none;
+        display: inlinee;
     }       
     #read-play {
-        display: inline;
+        display: none;
     }    
     #read-stop {
         display: none;
     }
+    svg {
+      path {
+        fill: #333;
+        stroke: #333;
+
+      }
+    }    
   }
 
 
   svg {
     vertical-align: middle;
+
+    path {
+      fill: #888;
+
+    }
   }
 }
 
@@ -43,3 +67,25 @@
         display: none;
       }    
 }
+
+
+
+// readings  
+
+.segment {
+  display: inline;
+  padding: 2px 4px 2px 0;
+  margin-right: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  opacity: 1;
+}
+.readings.while_playing .segment {
+  opacity: 0.5;
+}
+
+.readings.while_playing .segment.current {
+  background-color: #d0f0d0;
+  opacity: 1;
+}
+
