@@ -1,8 +1,9 @@
 $(document).foundation();
 
+var baseUrl = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
 
-var audio = new Audio('../assets/bpd_teilhabe_und_inklusion.mp3');
-var segments_file = '../assets/bpd_teilhabe_und_inklusion.json';
+var audio = new Audio(baseUrl + 'assets/bpd_teilhabe_und_inklusion.mp3');
+var segments_file = baseUrl + 'assets/bpd_teilhabe_und_inklusion.json';
 // read json and store in var text
 var segments = '';
 $.getJSON(segments_file, function(data) {
@@ -23,7 +24,6 @@ function wrapSegments(segments) {
   // Iterate over the segments and wrap each in a <span>
   segments.forEach((segment, index) => {
     var backgroundColor = randomColorize();
-    console.log("backgroundColor", backgroundColor);
     var span = `<span class="segment segment-${index}" data-segment="${index}" style="background-color: ${backgroundColor}">${segment.text}</span>`;
     readingDiv.append(span);
   });
@@ -32,12 +32,8 @@ function wrapSegments(segments) {
 function randomColorize(){
   var randomOffset = Math.floor(Math.random() * 40) - 20; // random number between -20 and +20
   var backgroundColor = `rgb(245, 235, ${225+randomOffset})`; // random opacity between 0.1 and 1
-  // console.log("backgroundColor", backgroundColor);
   return backgroundColor;
 }
-
-
-
 
 // First try: Find phrases. But since whipser chose segments more flexible, we stick to the segments from the json file.
 wrapTextPartyByRegex = function(segments) {
