@@ -1,8 +1,8 @@
 $(document).foundation();
 
 
-var audio = new Audio('/assets/bpd_teilhabe_und_inklusion.mp3');
-var segments_file = '/assets/bpd_teilhabe_und_inklusion.json';
+var audio = new Audio('../assets/bpd_teilhabe_und_inklusion.mp3');
+var segments_file = '../assets/bpd_teilhabe_und_inklusion.json';
 // read json and store in var text
 var segments = '';
 $.getJSON(segments_file, function(data) {
