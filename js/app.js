@@ -1,35 +1,55 @@
 $(document).foundation();
 
 
-var audio = new Audio('/assets/haa_test_thorsten_tacotron2_ddc.mp3');
-var segments_file = '/assets/haa_test_thorsten_tacotron2_ddc.json';
+var audio = new Audio('/assets/bpd_teilhabe_und_inklusion.mp3');
+var segments_file = '/assets/bpd_teilhabe_und_inklusion.json';
 // read json and store in var text
 var segments = '';
 $.getJSON(segments_file, function(data) {
-    console.log("text data", data.text);
     segments = data.segments;
+    // segments has an array with a timestamps in start and end  
     console.log("text", segments);
-
     wrapSegments(segments);
-    
-
-
 
 });
-// segments has an array with a timestamps in start and end  
 
-// STEPS
-// Wrap every segment in a <span> with a class:
-wrapSegments = function(segments) {
+
+// Wrap every segment in a <span> with a class and replace the contents of the div with class "reading"
+
+function wrapSegments(segments) {
+  var readingDiv = $('.readings');  
+  readingDiv.empty();
+  
+  // Iterate over the segments and wrap each in a <span>
+  segments.forEach((segment, index) => {
+    var backgroundColor = randomColorize();
+    console.log("backgroundColor", backgroundColor);
+    var span = `<span class="segment segment-${index}" data-segment="${index}" style="background-color: ${backgroundColor}">${segment.text}</span>`;
+    readingDiv.append(span);
+  });
+}
+
+function randomColorize(){
+  var randomOffset = Math.floor(Math.random() * 40) - 20; // random number between -20 and +20
+  var backgroundColor = `rgb(245, 235, ${225+randomOffset})`; // random opacity between 0.1 and 1
+  // console.log("backgroundColor", backgroundColor);
+  return backgroundColor;
+}
+
+
+
+
+// First try: Find phrases. But since whipser chose segments more flexible, we stick to the segments from the json file.
+wrapTextPartyByRegex = function(segments) {
   var readings = $('.readings');
   $('.readings p').each(function() {
-    // find every phrase by a point or question mark and wrap it in a span with class 'segment'
+    // find every phrase by a point or question mark or a longdash and wrap it in a span with class 'segment'
     var html = $(this).html();
     var index = 0;
-    html = html.replace(/([^?.!]+[?.!])/g, function(match) {
+    html = html.replace(/([^?.!–]+[?.!–:])/g, function(match) {
       var randomOffset = Math.floor(Math.random() * 40) - 20; // random number between -20 and +20
       var backgroundColor = `rgb(240, 240, ${225+randomOffset})`; // random opacity between 0.1 and 1
-      var backgroundColor = '';
+      // var backgroundColor = '';
       console.log("backgroundColor", backgroundColor);
       return `<span class="segment segment-${index++}" data-segment="${index}" style="background-color: ${backgroundColor}">${match.trim()}</span>`;
     });
@@ -59,21 +79,31 @@ function timerMitLogOutput() {
   const intervalId = setInterval(() => {
     
     const currentTime = Date.now();
-    const runTime = Math.floor((currentTime - startTime) / 1000);
-    console.log("intervall läuft...",runTime);
-    console.log("segments[index]", segments[index].end);
+
+    // integer (= seconds)
+    // const runTime = Math.floor((currentTime - startTime) / 1000);
+    // float (= seconds with 2 decimal places)
+    const runTime = parseFloat(((currentTime - startTime) / 1000).toFixed(2));
+    console.log("Intervall läuft...",runTime, "Sekunden");
+    if (segments[index] === undefined) {
+      console.log("No more segments");
+      clearInterval(intervalId);
+    }
+    console.log("segments[index].text", segments[index].text);
+    console.log("segments[index].end", segments[index].end);
     if ( runTime >= segments[index].end ) {
       var currentSegment = document.querySelector('.segment-'+index);
       currentSegment.classList.remove('current');
       index++;
-      console.log("Next segment", index);
+      console.log("+++++++++++ Next segment", index);
       var nextSegment = document.querySelector('.segment-' + index);
       if (nextSegment) {
         nextSegment.classList.add('current');
       }
     }
     currentSegment = nextSegment;
-    if (runTime >= 30) {
+    if (runTime >= 330) {
+      console.log("Timeout limit");
       clearInterval(intervalId);
     }
     var status = $('#read').data('status');
