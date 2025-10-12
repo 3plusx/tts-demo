@@ -12,6 +12,7 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 .grid-container {
     width: 60%;
     max-width: 1200px;
@@ -36,4 +37,17 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;
     line-height: 1.12    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100%;
+        align-items: normal;
+    }
+    .grid-container {
+        width: auto;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
 }
