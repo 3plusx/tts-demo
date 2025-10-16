@@ -38,10 +38,32 @@ h1 {
     font-size: 0.8em;
     line-height: 1.12    
 }
+@media only screen and (max-width: 1200px) {
+
+    .grid-container {
+        width: 70%;
+        margin-top: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        height: auto;
+        align-items: normal;
+    }
+    .grid-container {
+        width: 90%;
+        margin-top: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     body {
-        height: 100%;
+        height: auto;
         align-items: normal;
     }
     .grid-container {

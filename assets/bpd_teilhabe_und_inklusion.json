@@ -1,12 +1,12 @@
 {
-    "text": " Inklusion meint also die unbedingt eine Beziehung und Zugehörigkeit aller Menschen unabhängig von bestimmten Merkmalen zu sozialen und gesellschaftlichen Institutionen. Solche Institutionen sind das allgemeine Bildungssystem, der erste Arbeitsmarkt, es können aber auch Einrichtungen wie Frei-Better-Retheater sein, die allen offen stehen sollen. Dieses Verständnis von Inklusion hat einige Folgen. Erstens verschiebt sich die Perspektive vom Individuum auf die Gesellschaft. Es sind die gesellschaftlichen Institutionen, die sich öffnen und an die individuellen Bedürfnisse der Menschen anpassen müssen. Hierfür mussten Institutionelle räumliche und soziale Barrieren abgebaut werden. Eine institutionelle Barriere war bis 2017 der Ausschluss vom allgemeinen Wahlrecht von Personen, die unter Betreuung in allen Angelegenheiten standen. Diese hatte dazu geführt, dass über 80.000 Menschen, vor allem Menschen mit kognitiven Beeinträchtigungen nicht wählen konnten. Eine soziale Barriere liegt vor, wenn Menschen mit Behinderung im sozialen Alltagsleben diskriminiert werden, unser es nur mit mit leidigen Blicken oder abwertenden Bemerkungen.",
+    "text": " Inklusion meint also die unbedingte Einbeziehung und Zugehörigkeit aller Menschen unabhängig von bestimmten Merkmalen zu sozialen und gesellschaftlichen Institutionen. Solche Institutionen sind das allgemeine Bildungssystem, der erste Arbeitsmarkt, es können aber auch Einrichtungen wie Freibäder oder Theater sein, die allen offen stehen sollen. Dieses Verständnis von Inklusion hat einige Folgen. Erstens verschiebt sich die Perspektive vom Individuum auf die Gesellschaft. Es sind die gesellschaftlichen Institutionen, die sich öffnen und an die individuellen Bedürfnisse der Menschen anpassen müssen. Hierfür müssen institutionelle, räumliche und soziale Barrieren abgebaut werden. Eine institutionelle Barriere war bis 2017 der Ausschluss vom Allgemeinwahlrecht von Personen, die unter Betreuung in allen Angelegenheiten standen. Diese hatte dazu geführt, dass über 80.000 Menschen, vor allem Menschen mit kognitiven Beeinträchtigungen, nicht wählen konnten. Eine soziale Barriere liegt vor, wenn Menschen mit Behinderung im sozialen Alltagsleben diskriminiert werden und sei es nur mit mitleidigen Blicken oder abwertenden Bemerkungen.",
     "segments": [
         {
             "id": 0,
             "seek": 0,
             "start": 0,
-            "end": 4.5200000000000005,
-            "text": " Inklusion meint also die unbedingt eine Beziehung und Zugehörigkeit aller Menschen unabhängig",
+            "end": 4.48,
+            "text": " Inklusion meint also die unbedingte Einbeziehung und Zugehörigkeit aller Menschen unabhängig",
             "tokens": [
                 50364,
                 31147,
@@ -15,9 +15,12 @@
                 686,
                 611,
                 978,
-                41211,
-                3018,
-                879,
+                517,
+                2883,
+                278,
+                975,
+                6391,
+                650,
                 28213,
                 1063,
                 674,
@@ -32,21 +35,21 @@
                 455,
                 34591,
                 328,
-                50590
+                50588
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 1,
             "seek": 0,
-            "start": 4.5200000000000005,
-            "end": 8.32,
+            "start": 4.48,
+            "end": 8.88,
             "text": " von bestimmten Merkmalen zu sozialen und gesellschaftlichen Institutionen.",
             "tokens": [
-                50590,
+                50588,
                 2957,
                 35180,
                 1147,
@@ -65,21 +68,21 @@
                 6518,
                 268,
                 13,
-                50780
+                50808
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 2,
             "seek": 0,
-            "start": 8.32,
-            "end": 13.36,
-            "text": " Solche Institutionen sind das allgemeine Bildungssystem, der erste Arbeitsmarkt, es können",
+            "start": 8.88,
+            "end": 13.68,
+            "text": " Solche Institutionen sind das allgemeine Bildungssystem, der erste Arbeitsmarkt, es können aber auch",
             "tokens": [
-                50780,
+                50808,
                 7026,
                 1876,
                 2730,
@@ -101,36 +104,33 @@
                 11,
                 785,
                 6310,
-                51032
+                4340,
+                2168,
+                51048
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 3,
             "seek": 0,
-            "start": 13.36,
-            "end": 17.6,
-            "text": " aber auch Einrichtungen wie Frei-Better-Retheater sein, die allen offen stehen sollen.",
+            "start": 13.68,
+            "end": 17.84,
+            "text": " Einrichtungen wie Freibäder oder Theater sein, die allen offen stehen sollen.",
             "tokens": [
-                51032,
-                4340,
-                2168,
+                51048,
                 6391,
                 12836,
                 5084,
                 3355,
-                35939,
-                12,
-                33,
-                27296,
-                12,
-                49,
-                302,
-                675,
-                771,
+                6142,
+                897,
+                737,
+                1068,
+                4513,
+                26548,
                 6195,
                 11,
                 978,
@@ -139,21 +139,21 @@
                 19777,
                 24713,
                 13,
-                51244
+                51256
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 4,
             "seek": 0,
-            "start": 17.6,
-            "end": 21,
+            "start": 17.84,
+            "end": 21.16,
             "text": " Dieses Verständnis von Inklusion hat einige Folgen.",
             "tokens": [
-                51244,
+                51256,
                 39201,
                 4281,
                 16913,
@@ -166,21 +166,21 @@
                 15255,
                 1766,
                 13,
-                51414
+                51422
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 5,
             "seek": 0,
-            "start": 21,
-            "end": 25.240000000000002,
+            "start": 21.16,
+            "end": 25.400000000000002,
             "text": " Erstens verschiebt sich die Perspektive vom Individuum auf die Gesellschaft.",
             "tokens": [
-                51414,
+                51422,
                 31183,
                 694,
                 20563,
@@ -199,21 +199,21 @@
                 978,
                 30006,
                 13,
-                51626
+                51634
             ],
             "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
         },
         {
             "id": 6,
             "seek": 0,
-            "start": 25.240000000000002,
-            "end": 29.12,
-            "text": " Es sind die gesellschaftlichen Institutionen, die sich öffnen und an die individuellen",
+            "start": 25.400000000000002,
+            "end": 29.6,
+            "text": " Es sind die gesellschaftlichen Institutionen, die sich öffnen und an die individuellen Bedürfnisse",
             "tokens": [
-                51626,
+                51634,
                 2313,
                 3290,
                 978,
@@ -235,53 +235,52 @@
                 2461,
                 13789,
                 268,
-                51820
-            ],
-            "temperature": 0,
-            "avg_logprob": -0.22631411803396126,
-            "compression_ratio": 1.7078313253012047,
-            "no_speech_prob": 0.01115137804299593
-        },
-        {
-            "id": 7,
-            "seek": 2912,
-            "start": 29.12,
-            "end": 31.48,
-            "text": " Bedürfnisse der Menschen anpassen müssen.",
-            "tokens": [
-                50364,
                 19893,
                 1655,
                 69,
                 31481,
+                51844
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.10029077529907227,
+            "compression_ratio": 1.7038123167155426,
+            "no_speech_prob": 0.00790015235543251
+        },
+        {
+            "id": 7,
+            "seek": 2960,
+            "start": 29.6,
+            "end": 31.560000000000002,
+            "text": " der Menschen anpassen müssen.",
+            "tokens": [
+                50364,
                 1163,
                 8397,
                 364,
                 44270,
                 9013,
                 13,
-                50482
+                50462
             ],
             "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
         },
         {
             "id": 8,
-            "seek": 2912,
-            "start": 31.48,
-            "end": 36.32,
-            "text": " Hierfür mussten Institutionelle räumliche und soziale Barrieren abgebaut werden.",
+            "seek": 2960,
+            "start": 31.560000000000002,
+            "end": 35.64,
+            "text": " Hierfür müssen institutionelle, räumliche und soziale Barrieren abgebaut werden.",
             "tokens": [
-                50482,
+                50462,
                 10886,
                 12474,
-                1038,
-                6266,
-                2730,
-                6518,
+                9013,
+                7818,
                 4434,
+                11,
                 39442,
                 449,
                 10185,
@@ -295,21 +294,21 @@
                 42858,
                 4604,
                 13,
-                50724
+                50666
             ],
             "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
         },
         {
             "id": 9,
-            "seek": 2912,
-            "start": 36.32,
-            "end": 40.92,
-            "text": " Eine institutionelle Barriere war bis 2017 der Ausschluss vom allgemeinen Wahlrecht",
+            "seek": 2960,
+            "start": 35.64,
+            "end": 41.84,
+            "text": " Eine institutionelle Barriere war bis 2017 der Ausschluss vom Allgemeinwahlrecht von Personen,",
             "tokens": [
-                50724,
+                50666,
                 17664,
                 7818,
                 4434,
@@ -323,29 +322,30 @@
                 21286,
                 41372,
                 10135,
-                439,
+                1057,
                 31964,
-                5636,
-                27437,
+                259,
+                86,
+                10722,
                 31495,
-                50954
-            ],
-            "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
-        },
-        {
-            "id": 10,
-            "seek": 2912,
-            "start": 40.92,
-            "end": 44.8,
-            "text": " von Personen, die unter Betreuung in allen Angelegenheiten standen.",
-            "tokens": [
-                50954,
                 2957,
                 40942,
                 11,
+                50976
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
+        },
+        {
+            "id": 10,
+            "seek": 2960,
+            "start": 41.84,
+            "end": 44.800000000000004,
+            "text": " die unter Betreuung in allen Angelegenheiten standen.",
+            "tokens": [
+                50976,
                 978,
                 8662,
                 6279,
@@ -360,21 +360,21 @@
                 1463,
                 268,
                 13,
-                51148
+                51124
             ],
             "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
         },
         {
             "id": 11,
-            "seek": 2912,
-            "start": 44.8,
-            "end": 48.64,
-            "text": " Diese hatte dazu geführt, dass über 80.000 Menschen, vor allem Menschen mit",
+            "seek": 2960,
+            "start": 44.800000000000004,
+            "end": 49.24,
+            "text": " Diese hatte dazu geführt, dass über 80.000 Menschen, vor allem Menschen mit kognitiven",
             "tokens": [
-                51148,
+                51124,
                 18993,
                 13299,
                 13034,
@@ -392,51 +392,52 @@
                 17585,
                 8397,
                 2194,
-                51340
-            ],
-            "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
-        },
-        {
-            "id": 12,
-            "seek": 2912,
-            "start": 48.64,
-            "end": 51.760000000000005,
-            "text": " kognitiven Beeinträchtigungen nicht wählen konnten.",
-            "tokens": [
-                51340,
                 350,
                 2912,
                 270,
                 5709,
+                51346
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
+        },
+        {
+            "id": 12,
+            "seek": 2960,
+            "start": 49.24,
+            "end": 51.08,
+            "text": " Beeinträchtigungen, nicht wählen konnten.",
+            "tokens": [
+                51346,
                 31141,
                 686,
                 11397,
                 4701,
                 328,
                 5084,
+                11,
                 1979,
                 24787,
                 6698,
                 38216,
                 13,
-                51496
+                51438
             ],
             "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
         },
         {
             "id": 13,
-            "seek": 2912,
-            "start": 51.760000000000005,
-            "end": 56.16,
-            "text": " Eine soziale Barriere liegt vor, wenn Menschen mit Behinderung im sozialen Alltagsleben",
+            "seek": 2960,
+            "start": 51.08,
+            "end": 56.760000000000005,
+            "text": " Eine soziale Barriere liegt vor, wenn Menschen mit Behinderung im sozialen Alltagsleben diskriminiert",
             "tokens": [
-                51496,
+                51438,
                 17664,
                 31541,
                 68,
@@ -459,32 +460,32 @@
                 83,
                 12109,
                 41467,
-                51716
-            ],
-            "temperature": 0,
-            "avg_logprob": -0.21120098255298755,
-            "compression_ratio": 1.638157894736842,
-            "no_speech_prob": 0.0660364106297493
-        },
-        {
-            "id": 14,
-            "seek": 5616,
-            "start": 56.16,
-            "end": 60.31999999999999,
-            "text": " diskriminiert werden, unser es nur mit mit leidigen Blicken oder abwertenden Bemerkungen.",
-            "tokens": [
-                50364,
                 12355,
                 16796,
                 4859,
+                51722
+            ],
+            "temperature": 0,
+            "avg_logprob": -0.13483007925528068,
+            "compression_ratio": 1.66,
+            "no_speech_prob": 0.27207040786743164
+        },
+        {
+            "id": 14,
+            "seek": 5676,
+            "start": 56.76,
+            "end": 60.32,
+            "text": " werden und sei es nur mit mitleidigen Blicken oder abwertenden Bemerkungen.",
+            "tokens": [
+                50366,
                 4604,
-                11,
-                12977,
+                674,
+                10842,
                 785,
                 4343,
                 2194,
                 2194,
-                476,
+                306,
                 327,
                 3213,
                 2177,
@@ -497,12 +498,12 @@
                 10608,
                 5084,
                 13,
-                50572
+                50542
             ],
             "temperature": 0,
-            "avg_logprob": -0.31494760513305664,
-            "compression_ratio": 1.1265822784810127,
-            "no_speech_prob": 0.7733548879623413
+            "avg_logprob": -0.21273681391840396,
+            "compression_ratio": 1.0416666666666667,
+            "no_speech_prob": 0.983483076095581
         }
     ],
     "language": "de"

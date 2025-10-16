@@ -15,7 +15,7 @@
           <h1>
             Inklusion – vom Individuum zur Gesellschaft
           </h1>
-          <div id="read">
+          <div id="read" class="readButton" data-status="ready" role="button" aria-pressed="false" tabindex="0" aria-label="Text vorlesen" data-audio-file="assets/bpd_teilhabe_und_inklusion.mp3" data-timestamps-file="assets/bpd_teilhabe_und_inklusion.json">
             <span id="read-ready">
               <svg width="15" height="15" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10,10 L80,50 L10,90 L10,10" stroke="black" stroke-width="5" fill="#333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,18 +63,22 @@
               Erstens verschiebt sich die Perspektive vom Individuum auf die Gesellschaft. Es sind die gesellschaftlichen Institutionen, die sich öffnen und an die individuellen Bedürfnisse der Menschen anpassen müssen. Hierfür müssen institutionelle, räumliche und soziale Barrieren abgebaut werden. Eine institutionelle Barriere war bis 2017 der Ausschluss vom allgemeinen Wahlrecht von Personen, die unter Betreuung in allen Angelegenheiten standen. Dieser hatte dazu geführt, dass über 80000 Menschen, vor allem Menschen mit kognitiven Beeinträchtigungen, nicht wählen konnten. Eine soziale Barriere liegt vor, wenn Menschen mit Behinderung im sozialen Alltagsleben diskriminiert werden, und sei es nur mit mitleidigen Blicken oder abwertenden Bemerkungen.
             </p>
           </div>   
-          <p>
-            <small>
-              Ein Auszug aus dem Text <a href="https://www.bpb.de/themen/inklusion-teilhabe/behinderungen/521497/teilhabe-und-inklusion/">Teilhabe und Inklusion</a> von Dieter Kulke. Lizenz: CC BY-NC-ND 4.0.
-              
-            </small>
-          </p>
-        </div>
+          
+          <div class="credits">
+            <p class="small">
+                Ein Auszug aus dem Text <a href="https://www.bpb.de/themen/inklusion-teilhabe/behinderungen/521497/teilhabe-und-inklusion/">Teilhabe und Inklusion</a> von Dieter Kulke. Lizenz: CC BY-NC-ND 4.0.
+            </p>
+            <p class="small">
+                Demo von <a href="https://3plusx.io">3plusx</a>, 2025, Audio unter Benutzung von <a href="https://www.thorsten-voice.de/">Thorsten Voice</a>. Quellcode auf <a href="https://github.com/3plusx/tts-demo">GitHub</a>, 
+                UI basierend auf <a href="https://get.foundation/">Foundation</a>.
+            </p>
+          </div>
+       </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>

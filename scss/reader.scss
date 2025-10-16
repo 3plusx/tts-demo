@@ -50,10 +50,8 @@
 
   svg {
     vertical-align: middle;
-
     path {
       fill: #888;
-
     }
   }
 }
@@ -68,10 +66,12 @@
       }    
 }
 
-
-
 // readings  
-
+.readings {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  user-select: none;
+}
 .segment {
   display: inline;
   padding: 2px 0 2px 0;
@@ -82,9 +82,9 @@
 .readings.while_playing .segment {
   opacity: 0.35;
 }
-
 .readings.while_playing .segment.current {
   background-color: #d0f0d0;
+  background-color: rgb(245, 235, 215);
   opacity: 1;
 }
 
