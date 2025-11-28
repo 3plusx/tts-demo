@@ -19,7 +19,7 @@ audio.addEventListener('canplaythrough', function() {
   var segments = '';
   $.getJSON(segments_file, function(data) {
       // segments has an array with a timestamps in start and end  
-      segments = data.segments;
+      segments = data.sentences;
       console.log("👌 Read",segments.length,"segments from ", segments_file);
       wrapSegments(segments);
       console.log("👌 Segments wrapped.");
