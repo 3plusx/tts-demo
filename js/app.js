@@ -1,4 +1,4 @@
-import { wrapSegments } from './helpers/utils.js';
+import { wrapSegments, wrapContentText } from './helpers/utils.js';
 import { handleReadButtonClick } from './helpers/interactions.js';
 import { timer } from './helpers/timer.js';
 
@@ -21,7 +21,8 @@ audio.addEventListener('canplaythrough', function() {
       // segments has an array with a timestamps in start and end  
       segments = data.sentences;
       console.log("👌 Read",segments.length,"segments from ", segments_file);
-      wrapSegments(segments);
+      // wrapSegments(segments);
+      wrapContentText(segments);
       console.log("👌 Segments wrapped.");
       handleReadButtonClick(audio, segments, () => timer(segments, audio, '#read'));
       console.log("👌 ReadButton handler set.");
