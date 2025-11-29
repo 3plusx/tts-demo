@@ -48,7 +48,7 @@ ul li, blockquote, blockquote p {
 .small {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;
-    line-height: 1.12    
+    line-height: 1.32;
 }
 a {
     color: #e63946;
@@ -93,10 +93,15 @@ a {
         align-items: normal;
     }
     .grid-container {
-        width: auto;
+        width: 92%;
+        padding: 2.5rem 2rem;
     }
     h1 {
         font-size: 1.8em;
+    }
+    p, ul li, blockquote, blockquote p {
+        font-size: 1em;
+         line-height: 1.5;
     }
 }
 .grid-container {
