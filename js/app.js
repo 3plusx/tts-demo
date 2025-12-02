@@ -20,8 +20,14 @@ audio.addEventListener('canplaythrough', function() {
   $.getJSON(segments_file, function(data) {
       // segments has an array with a timestamps in start and end  
       segments = data.sentences;
+      if (!segments || segments.length === 0) {
+          console.error("No segments found in ", segments_file);
+          const readButton = document.getElementById('read');
+          readButton.parentNode.removeChild(readButton);   
+          console.log("❌ Removed read button due to missing segments.");      
+          return;
+      }
       console.log("👌 Read",segments.length,"segments from ", segments_file);
-      // wrapSegments(segments);
       wrapContentText(segments);
       console.log("👌 Segments wrapped.");
       handleReadButtonClick(audio, segments, () => timer(segments, audio, '#read'));
@@ -29,6 +35,8 @@ audio.addEventListener('canplaythrough', function() {
   });
 });
 audio.addEventListener('error', function() {
-  console.error("Error loading audio file ", audio_file);
+  console.error("❌ Error loading audio file ", audio_file);
+  const readButton = document.getElementById('read');
+  readButton.parentNode.removeChild(readButton);
 });
 

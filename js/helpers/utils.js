@@ -39,7 +39,7 @@ export function wrapContentText(segments) {
       if ( result.accuracy < 70 ) return match; // skip non-matching sentences
 
       const id = index++;
-      console.log(id, "Wrapped sentence:", match.trim());
+      console.log("Wrapped sentence:", match.trim());
       return `<span class="segment segment-${id}" data-segment="${id}">${match.trim()} </span>`;
       
     });
